@@ -121,7 +121,8 @@ extension PhotoCaptureProcessor: AVCapturePhotoCaptureDelegate {
         DispatchQueue.main.async {
             self.completionHandler(self)
         }
-                    
+        
+        // Now package includes save photo after capture
         self.saveToPhotoLibrary(photoData)
     }
 }
